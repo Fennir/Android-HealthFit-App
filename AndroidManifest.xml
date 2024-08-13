@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.healthfit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthFit"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyATD8hKFXAYsMZs50pqwQkELmidjuf5F6E" />
+
+        <activity
+            android:name=".Location"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionTrackingForm"
+            android:exported="false" />
+        <activity
+            android:name=".DailyExerciseStrength"
+            android:exported="false" />
+        <activity
+            android:name=".DailyExerciseCardio"
+            android:exported="false" />
+        <activity
+            android:name=".DailyExerciseBodyweight"
+            android:exported="false" />
+        <activity
+            android:name=".GoalSetting"
+            android:exported="false" />
+        <activity
+            android:name=".SleepTrackingData"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SleepTrackingForm"
+            android:exported="false" />
+        <activity
+            android:name=".WaterTrackingForm"
+            android:exported="false" />
+        <activity
+            android:name=".WeightTrackingForm"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PersonalizedCoaching"
+            android:exported="false" />
+        <activity
+            android:name=".GoalSettingForm"
+            android:exported="false" />
+        <activity
+            android:name=".WeightTracking"
+            android:exported="false" />
+        <activity
+            android:name=".SleepTracking"
+            android:exported="false" />
+        <activity
+            android:name=".WaterTracking"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionalTracking"
+            android:exported="false" />
+        <activity
+            android:name=".DailyExercise"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
